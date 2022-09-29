@@ -6,6 +6,7 @@ import './MainContainer.css';
 const MainContainer = () => {
 
     const [esercises, setExecrises] = useState([]);
+    const [cart, setCart] = useState([]);
 
 
     useEffect(() => {
@@ -28,7 +29,7 @@ const MainContainer = () => {
                 </div>
             </div>
             <div className=''>
-                <ProfileContainer></ProfileContainer>
+                <ProfileContainer ></ProfileContainer>
             </div>
             
         </div>
