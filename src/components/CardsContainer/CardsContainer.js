@@ -1,9 +1,26 @@
 import React from 'react';
+import './CardsContainer.css'
 
-const CardsContainer = () => {
+const CardsContainer = (props) => {
+   const {exercise} = props;
+
+
+   const { name, img, time} =  exercise;
+    
+    console.log(name);
     return (
         <div className=''>
-            <h4>Select what you wnat to do today</h4>
+            <div className='card'>
+                <img src={img} alt="card-img" />
+                <div className='card-info'>
+                    <p className='card-name'>{name}</p>
+                    <p><small>Seller: {time}</small></p>
+                </div>
+                <button className='button-cart'>
+                    <p className='btn-text'>Add to list</p>
+                
+                </button>
+            </div>       
         </div>
     );
 };

@@ -1,0 +1,46 @@
+[
+  {
+    "id": "124e13b9-2d54-4b2f-a74d-a77b362d6ead",
+    "index": 0,
+    "name": "Morning Walk",
+    "ratings": 4,
+    "time": 45,
+    "img": "https://manmatters.com/blog/content/images/2021/04/Top-15-Morning-Walk-Benefits-You-Didn-t-Know-_-Side-Tips---Tricks22.jpg"
+  },
+  {
+    "id": "13cbc7ed-a61b-4883-9d42-82d7d8642b86",
+    "index": 1,
+    "name": "Lunges",
+    "ratings": 5,
+    "time": 30,
+    "img": "https://media.istockphoto.com/vectors/illustrated-exercise-guide-by-healthy-woman-doing-lunges-workout-in-2-vector-id964785648?k=20&m=964785648&s=612x612&w=0&h=9VG3uRm5d6aut43FvTu5xu5ftILSSQuxFq5gGU5GmVQ="
+  },
+  {
+    "id": "307f166f-1d04-4573-bc37-2f461ea9d4f7",
+    "index": 2,
+    "name": "Pushups",
+    "time": 40,
+    "img": "https://phantom-marca.unidadeditorial.es/efa9740df47cff7f9466ea78fd720074/crop/0x93/899x599/resize/1320/f/jpg/assets/multimedia/imagenes/2022/01/19/16426036798831.jpg"
+  },
+  {
+    "id": "4bf9798f-63bc-4a83-b0c6-6a3b816fe922",
+    "index": 3,
+    "name": "Dumbbell rows",
+    "time": 60,
+    "img": "https://barbend.com/wp-content/uploads/2021/04/3.jpg"
+  },
+  {
+    "id": "9496d72b-04ec-41f8-9bc3-0a7c9697be8e",
+    "index": 4,
+    "name": "Burpees",
+    "time": 45,
+    "img": "https://experiencelife.lifetime.life/wp-content/uploads/2021/03/How-to-do-the-perfect-burpee.jpg"
+  },
+  {
+    "id": "6e5593d3-557b-43cf-8dab-a5140faedfb0",
+    "index": 5,
+    "name": "Squats",
+    "time": 30,
+    "img": "https://blog.fitbit.com/wp-content/uploads/2016/10/ArmStanding.jpg"
+  }
+]
