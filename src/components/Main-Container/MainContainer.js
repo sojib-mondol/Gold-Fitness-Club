@@ -7,11 +7,13 @@ const MainContainer = () => {
 
     const [esercises, setExecrises] = useState([]);
     const [cart, setCart] = useState([]);
+    const [totalExerciseTime, setTotalExerciseTime] = useState(0.0);
 
-    const handleAddToCart = (exerciseItem) =>{
-        setCart(exerciseItem);
+    
+
+    const addToExerciseTime = (time) => {
+        setTotalExerciseTime((totalExerciseTime) => totalExerciseTime + time);
     }
-
 
     useEffect(() => {
          fetch('products.json')
@@ -25,16 +27,20 @@ const MainContainer = () => {
                 <h4>Select what you wnat to do today</h4>
                 <div className="card-container">
                     {
-                        esercises.map(exercise => <CardsContainer
-                        key={exercise.id}
-                        exercise={exercise}
-                        handleAddToCart = {handleAddToCart}
-                        ></CardsContainer>)
+                        esercises.map(
+                            exercise => 
+                                <CardsContainer
+                                    key={exercise.id}
+                                    exercise={exercise}
+                                    addToExerciseTime={addToExerciseTime}>
+                                </CardsContainer>)
                     }
                 </div>
             </div>
             <div className=''>
-                <ProfileContainer cart={cart}></ProfileContainer>
+                <ProfileContainer cart={cart}
+                    totalExerciseTime={totalExerciseTime}
+                ></ProfileContainer>
             </div>
             
         </div>

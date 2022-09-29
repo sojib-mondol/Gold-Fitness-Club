@@ -4,7 +4,7 @@ import './Break.css'
 
 const Break = (props) => {
     //console.log(props)
-    const time = props;
+    const { time, totalExerciseTime } = props;
     //console.log(time);
     
     const [second, setSecond]= useState("");
@@ -23,7 +23,7 @@ const Break = (props) => {
             <div>
             <h5 className='exercise-detail-field shadow-lg p-2'>Exercise Details</h5>
             <div className='exercise-detail-field rounded shadow-lg p-2'>
-                <h5 className=''>Exercise time: s</h5>
+            <h5 className=''>Exercise time: {totalExerciseTime}s</h5>
                 <h5 className=''>Break time: {second}</h5>
             </div>
             <div className=''>

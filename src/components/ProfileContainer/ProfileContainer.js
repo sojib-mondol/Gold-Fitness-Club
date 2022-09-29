@@ -5,19 +5,18 @@ import './ProfileContainer.css'
 
 const ProfileContainer = (props) => {
 
-    const {cart} = props;
+    const { cart, totalExerciseTime } = props;
     console.log(cart);
     let time;
    
-    for (const product of cart) {
-        time = time + product.time;
-    }
+    
 
     return (
         <div className='profile-box'>
-            {/* <p>This is profile section</p> */}
             <Personal></Personal>
-            <Break props={time}></Break>
+            <Break time={time}
+                totalExerciseTime={totalExerciseTime}>
+            </Break>
         </div>
     );
 };
