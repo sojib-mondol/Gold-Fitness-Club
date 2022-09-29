@@ -2,12 +2,10 @@ import React from 'react';
 import './CardsContainer.css'
 
 const CardsContainer = (props) => {
-   const {exercise} = props;
-
-
-   const { name, img, time} =  exercise;
+    const {handleAddToCart, exercise} = props;
+    const { name, img, time} =  exercise;
     
-    console.log(name);
+    
     return (
         <div className=''>
             <div className='card'>
@@ -16,9 +14,8 @@ const CardsContainer = (props) => {
                     <p className='card-name'>{name}</p>
                     <p><small>Time: {time}s</small></p>
                 </div>
-                <button className='button-cart'>
+                <button onClick={() => handleAddToCart(exercise)} className='button-cart'>
                     <p className='btn-text'>Add to list</p>
-                
                 </button>
             </div>       
         </div>

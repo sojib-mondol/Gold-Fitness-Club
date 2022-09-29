@@ -8,6 +8,10 @@ const MainContainer = () => {
     const [esercises, setExecrises] = useState([]);
     const [cart, setCart] = useState([]);
 
+    const handleAddToCart = (exerciseItem) =>{
+        setCart(exerciseItem);
+    }
+
 
     useEffect(() => {
          fetch('products.json')
@@ -24,12 +28,13 @@ const MainContainer = () => {
                         esercises.map(exercise => <CardsContainer
                         key={exercise.id}
                         exercise={exercise}
+                        handleAddToCart = {handleAddToCart}
                         ></CardsContainer>)
                     }
                 </div>
             </div>
             <div className=''>
-                <ProfileContainer ></ProfileContainer>
+                <ProfileContainer cart={cart}></ProfileContainer>
             </div>
             
         </div>

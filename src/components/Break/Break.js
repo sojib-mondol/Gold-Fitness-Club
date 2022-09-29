@@ -2,9 +2,11 @@
 import React, { useState } from 'react';
 import './Break.css'
 
-const Break = () => {
+const Break = (props) => {
     //console.log(props)
-    //const {Time} = props.time
+    const time = props;
+    //console.log(time);
+    
     const [second, setSecond]= useState("");
 
 
