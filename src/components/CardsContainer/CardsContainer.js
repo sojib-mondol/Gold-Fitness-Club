@@ -14,7 +14,7 @@ const CardsContainer = (props) => {
                 <img src={img} alt="card-img" />
                 <div className='card-info'>
                     <p className='card-name'>{name}</p>
-                    <p><small>Seller: {time}s</small></p>
+                    <p><small>Time: {time}s</small></p>
                 </div>
                 <button className='button-cart'>
                     <p className='btn-text'>Add to list</p>
